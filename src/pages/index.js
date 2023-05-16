@@ -12,6 +12,7 @@ import Link from 'next/link'
 import ProductCard from '@/components/productCard';
 import Business from '@/components/summary';
 import { ThemeContext } from './_app';
+import Review from '@/components/Review';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -94,7 +95,7 @@ export default function Home() {
 
         }
         <div className='flex justify-end text-xl font-bold px-4 my-4'>
-        <Link href={`/cakeType/Birthday cake`}>
+          <Link href={`/cakeType/Birthday cake`}>
             <div className='flex items-center gap-2'> <h1> See all</h1>  <BsArrowRight /></div>
           </Link>
         </div>
@@ -148,7 +149,7 @@ export default function Home() {
 
       </div>
 
-
+      <Review />
 
     </main>
   )
